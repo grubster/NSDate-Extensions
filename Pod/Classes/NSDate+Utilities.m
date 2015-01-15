@@ -81,7 +81,7 @@ static const unsigned componentFlags = (NSYearCalendarUnit| NSMonthCalendarUnit 
 	return newDate;		
 }
 
-+ (NSDate *) normalizeDate {
+- (NSDate *) normalizeDate {
 	unsigned int flags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
 	NSCalendar* calendar = [NSCalendar currentCalendar];
 	NSDateComponents* components = [calendar components:flags fromDate:self];

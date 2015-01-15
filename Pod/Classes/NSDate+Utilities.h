@@ -24,6 +24,7 @@
 + (NSDate *) dateWithHoursBeforeNow: (NSInteger) dHours;
 + (NSDate *) dateWithMinutesFromNow: (NSInteger) dMinutes;
 + (NSDate *) dateWithMinutesBeforeNow: (NSInteger) dMinutes;
+- (NSDate *) normalizeDate;
 
 // Short string utilities
 - (NSString *) stringWithDateStyle: (NSDateFormatterStyle) dateStyle timeStyle: (NSDateFormatterStyle) timeStyle;
