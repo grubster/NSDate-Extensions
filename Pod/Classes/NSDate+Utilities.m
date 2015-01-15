@@ -81,6 +81,13 @@ static const unsigned componentFlags = (NSYearCalendarUnit| NSMonthCalendarUnit 
 	return newDate;		
 }
 
++ (NSDate *) normalizeDate {
+	unsigned int flags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+	NSCalendar* calendar = [NSCalendar currentCalendar];
+	NSDateComponents* components = [calendar components:flags fromDate:self];
+	return [calendar dateFromComponents:components];
+}
+
 #pragma mark - String Properties
 - (NSString *) stringWithFormat: (NSString *) format
 {
