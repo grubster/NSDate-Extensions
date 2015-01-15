@@ -24,7 +24,6 @@
 + (NSDate *) dateWithHoursBeforeNow: (NSInteger) dHours;
 + (NSDate *) dateWithMinutesFromNow: (NSInteger) dMinutes;
 + (NSDate *) dateWithMinutesBeforeNow: (NSInteger) dMinutes;
-- (NSDate *) normalizeDate;
 
 // Short string utilities
 - (NSString *) stringWithDateStyle: (NSDateFormatterStyle) dateStyle timeStyle: (NSDateFormatterStyle) timeStyle;
@@ -72,6 +71,7 @@
 - (BOOL) isTypicallyWeekend;
 
 // Adjusting dates
+- (NSDate *) normalizeDate;
 - (NSDate *) dateByAddingYears: (NSInteger) dYears;
 - (NSDate *) dateBySubtractingYears: (NSInteger) dYears;
 - (NSDate *) dateByAddingMonths: (NSInteger) dMonths;
@@ -82,6 +82,7 @@
 - (NSDate *) dateBySubtractingHours: (NSInteger) dHours;
 - (NSDate *) dateByAddingMinutes: (NSInteger) dMinutes;
 - (NSDate *) dateBySubtractingMinutes: (NSInteger) dMinutes;
+- (NSDate *) dateByAddingSeconds: (NSInteger) dSeconds;
 
 // Date extremes
 - (NSDate *) dateAtStartOfDay;
