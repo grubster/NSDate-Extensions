@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/*.{h,m}'
   s.public_header_files = 'Pod/Classes/NSDate+Utilities.h'
-  s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
 end
