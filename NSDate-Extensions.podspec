@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = "NSDate-Extensions"
+  s.name             = "NSDateExtensions"
   s.version          = "0.1.0"
   s.summary          = "Practical real-world dates"
   s.homepage         = "https://github.com/grubster/NSDate-Extensions"
@@ -11,5 +11,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/*.{h,m}'
+  s.public_header_files = 'Pod/Classes/*.h'
   s.frameworks = 'UIKit', 'MapKit'
 end
